@@ -1,0 +1,48 @@
+---
+import "../global.css";
+import Body from "../layout/Body.astro";
+import Container from "../layout/Container.astro";
+import Lizerd from "../assets/lizard.jpeg";
+
+const sizes = [
+    'rounded-xs',
+    'rounded-sm',
+    'rounded-md',
+    'rounded-lg',
+    'rounded-xl',
+    'rounded-2xl',
+    // 'rounded-3xl',
+    // 'rounded-4xl',
+]
+---
+<Body title="Axelered">
+<Container>
+    <main class="py-16 space-y-16">
+        <div class="space-y-4">
+            <h1 class="text-4xl font-bold text-primary hover:underline cursor-pointer">
+                Astro Template
+            </h1>
+            <p class="font-mono text-muted text-xl">stack</p>
+            <p class="font-mono text-xl">typesrcipt, tailwind 4, fontsource</p>
+        </div>
+
+        <!-- image -->
+        <div class="space-y-4">
+            <p class="font-mono text-muted text-xl">image</p>
+            <img class="rounded" src={Lizerd.src} alt="Lizard Logo"/>
+        </div>
+
+        <!-- rounded -->
+        <div class="space-y-4">
+            <p class="font-mono text-muted text-xl">rounding</p>
+            <div class="flex gap-4">
+                {sizes.map(size => (
+                        <div class={`size-32 ${size} bg-primary text-primary-foreground flex items-center justify-center`}>
+                            <span class="text-xl">{size.split('-')[1]}</span>
+                        </div>
+                ))}
+            </div>
+        </div>
+    </main>
+</Container>
+</Body>

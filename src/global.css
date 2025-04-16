@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+@theme {
+    --font-display: 'DM Sans Variable', sans-serif;
+    --font-sans: 'DM Sans Variable', sans-serif;
+    --font-mono: 'DM Mono', monospace;
+
+    --color-background: #0a0a0a;
+    --color-foreground: #ffffff;
+    --color-muted: #565656;
+    --color-primary: #b4ff00;
+    --color-primary-foreground: #000000;
+
+    --radius-xs: 0.25rem;
+    --radius-sm: 0.5rem;
+    --radius: 1rem;
+    --radius-md: 1rem;
+    --radius-lg: 1.5rem;
+    --radius-xl: 2rem;
+    --radius-2xl: 3rem;
+    /*--radius-3xl: 2rem;*/
+    /*--radius-4xl: 3rem;*/
+}
