@@ -3,6 +3,7 @@ import "../global.css";
 import Body from "../layout/Body.astro";
 import Container from "../layout/Container.astro";
 import Lizerd from "../assets/lizard.jpeg";
+import {ShrimpIcon, BoneIcon, BirdIcon} from '@lucide/astro'
 
 const sizes = [
     'rounded-xs',
@@ -17,13 +18,23 @@ const sizes = [
 ---
 <Body title="Axelered">
 <Container>
-    <main class="py-16 space-y-16">
+    <main class="py-16 space-y-8">
         <div class="space-y-4">
             <h1 class="text-4xl font-bold text-primary hover:underline cursor-pointer">
                 Astro Template
             </h1>
             <p class="font-mono text-muted text-xl">stack</p>
             <p class="font-mono text-xl">typesrcipt, tailwind 4, fontsource</p>
+        </div>
+
+        <!-- icons -->
+        <div class="space-y-4">
+            <p class="font-mono text-muted text-xl">@lucide/icons</p>
+            <div class="flex gap-4">
+                <ShrimpIcon class="size-6"/>
+                <BoneIcon class="size-6"/>
+                <BirdIcon class="size-6"/>
+            </div>
         </div>
 
         <!-- image -->
